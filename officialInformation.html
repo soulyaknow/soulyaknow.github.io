@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css"/>
+    <link rel="stylesheet" href="style/bubbles.css"/>
+    <title>Official Information</title>
+</head>
+<style>
+    #errmsg
+    {
+        color: #030423;
+    }
+</style>
+<body>
+    <!--Bubbles Effect-->
+    <div class="wrapper">
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+      </div>
+  
+      <div class="container active">
+        <!--Create Account-->
+        <div class="update-form">
+          <div class="update-form-container">
+            <h3>Official Information</h3>
+            <p id="errmsg"></p>
+            <div class="cs-form-group">
+              <input type="text" name="fname" id="fname" class="cs-form-control" placeholder="First Name"/>
+            </div>
+            <div class="cs-form-group">
+              <input type="text" name="position" id="position" class="cs-form-control" placeholder="Position"/>
+            </div>
+            <div class="cs-form-group">
+              <input type="text" name="department" id="department" class="cs-form-control" placeholder="Department"/>
+            </div>
+            <div class="cs-form-group">
+              <input type="text" name="contact_number" id="contact_number" class="cs-form-control" placeholder="Phone no."/>
+            </div>
+            <div class="cs-form-group">
+              <select name="gender" id="gender" class="cs-form-control">
+                <option selected disabled value="">Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+            </div>
+            <div class="cs-form-group">
+              <button id="btn-updateOfficial" class="cs-form-submit">Update</button>
+            </div>
+            <p>Go back in <a href="admin.html">Dashboard</a></p>
+          </div>
+        </div>
+      </div>
+    </body>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/adminUpdate.js"></script>
+</html>

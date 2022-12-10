@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashbboard</title>
+    <link rel="stylesheet" href="style/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+</head>
+<body>
+    <div class="wrapper">
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+    </div>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#" class="logo">
+                    <img src="images/1.jpg">
+                    <span class="nav-iten">Admin Panel</span>
+                </a></li>
+                <li><a href="admin.html">
+                    <i class="fas fa-menorah"></i>
+                    <span class="nav-item">Dashboard</span>
+                </a></li>
+                <li><a href="messageGraph.html">
+                    <i class="fas fa-comment"></i>
+                    <span class="nav-item">Message Graph</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="fas fa-database"></i>
+                    <span class="nav-item">Report</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="fas fa-chart-bar"></i>
+                    <span class="nav-item">Users Table</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="fas fa-cog"></i>
+                    <span class="nav-item">Setting</span>
+                </a></li>
+                <li><a href="#" class="logout">
+                    <i class="fas fa-sign-out"></i>
+                    <span class="nav-item" onclick="doLogout()">Logout</span>
+                </a></li>
+            </ul>
+        </nav>
+
+        <section class="main">
+            <div class="main-top">
+                <h1>Client Data</h1>
+                <i class="fas fa-user-cog"></i>
+            </div>
+            <section class="officials">
+                <div class="offcials-list">
+                    <h1>Users List</h1>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Username</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Middle Name</th>
+                                <th>Email</th>
+                                <th>Contact No.</th>
+                                <th>Address</th>
+                                <th>Gender</th>
+                                <th>isLocked</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="userTbl">
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </section>
+    </div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/userInformationTable.js"></script>
+</html>

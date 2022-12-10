@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/bubbles.css">
+    <link rel="stylesheet" href="style/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <title>Message Graph</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+    </div>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#" class="logo">
+                    <img src="images/1.jpg">
+                    <span class="nav-iten">Admin Panel</span>
+                </a></li>
+                <li><a href="admin.html">
+                    <i class="fas fa-menorah"></i>
+                    <span class="nav-item">Dashboard</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="fas fa-comment"></i>
+                    <span class="nav-item">Message Graph</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="fas fa-database"></i>
+                    <span class="nav-item">Report</span>
+                </a></li>
+                <li><a href="adminUserTable.html">
+                    <i class="fas fa-chart-bar"></i>
+                    <span class="nav-item">Users Table</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="fas fa-cog"></i>
+                    <span class="nav-item">Setting</span>
+                </a></li>
+                <li><a href="#" class="logout">
+                    <i class="fas fa-sign-out"></i>
+                    <span class="nav-item">Logout</span>
+                </a></li>
+            </ul>
+        </nav>
+
+        <section class="main">
+            <div class="main-top">
+                <h1>Message Graph</h1>
+                <i class="fas fa-user-cog"></i>
+            </div>
+            <div class="users">
+                <div class="card">
+                    <img src="images/2.png">
+                    <!--Name of the officials-->
+                    <h4>Test One</h4>
+                    <!--Roles-->
+                    <p>Official 1</p>
+                    <div class="per">
+                        <table>
+                            <tr>
+                                <td><span>Police</span></td>
+                                <td><span>12345567111</span></td>
+                            </tr>
+                            <tr>
+                                <td>Department</td>
+                                <td>Phone no.</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <button>Profile</button>
+                </div>
+                <div class="card">
+                    <img src="images/3.jpeg">
+                    <!--Name of the officials-->
+                    <h4>Test Two</h4>
+                    <!--Roles-->
+                    <p>Official 2</p>
+                    <div class="per">
+                        <table>
+                            <tr>
+                                <td><span>Hospital</span></td>
+                                <td><span>12312321312</span></td>
+                            </tr>
+                            <tr>
+                                <td>Department</td>
+                                <td>Phone no.</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <button>Profile</button>
+                </div>
+                <div class="card">
+                    <img src="images/4.png">
+                    <!--Name of the officials-->
+                    <h4>Test Three</h4>
+                    <!--Roles-->
+                    <p>Official 3</p>
+                    <div class="per">
+                        <table>
+                            <tr>
+                                <td><span>Fire</span></td>
+                                <td><span>21412312112</span></td>
+                            </tr>
+                            <tr>
+                                <td>Department</td>
+                                <td>Phone no.</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <button>Profile</button>
+                </div>
+                <div class="card">
+                    <img src="images/1.jpg">
+                    <!--Name of the officials-->
+                    <h4>Test Four</h4>
+                    <!--Roles-->
+                    <p>Official 4</p>
+                    <div class="per">
+                        <table>
+                            <tr>
+                                <td><span>Drrmo</span></td>
+                                <td><span>120120321</span></td>
+                            </tr>
+                            <tr>
+                                <td>Department</td>
+                                <td>Phone no.</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <button>Profile</button>
+                </div>
+            </div>
+            <section class="graph">
+                <div class="graph-list">
+                    <h1>Graph</h1>
+                    <div class="graph-container">
+                        <div class="chart">
+                            <canvas id="barchart" width="400px" height="350px"></canvas>
+                        </div>
+                        <div class="chart">
+                            <canvas id="doughnut" width="400px" height="300px"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.0.1/dist/chart.umd.min.js"></script>
+<script src="js/chart1.js"></script>
+<script src="js/chart2.js"></script>
+</html>

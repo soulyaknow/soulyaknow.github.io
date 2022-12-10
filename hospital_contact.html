@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/contact.css">
+    <title>Hospital Contact</title>
+</head>
+<style>
+    #errmsg
+    {
+        color: #199dff;
+    }
+</style>
+<body>
+    <div class="wrapper">
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+        <div><span class="dot"></span></div>
+    </div>
+    <header>
+        <a href="#" class="logo">Hospital Contact</a>
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar"><ion-icon name="menu-outline"></ion-icon></label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="afterIndex.html">Home</a></li>
+                <li><a href="afterDetails.html">About</a>
+                </li>
+                <li><a href="#">Donate</a>
+                    <ul>
+                        <li><a href="goods.html">Goods</a></li>
+                        <li><a href="money.html">Money</a></li>
+                    </ul>
+                </li>
+                <li><a href="messagesTable.html">Messages</a>
+                </li>
+                <li><a href="afterLocation.html">Location</a>
+                </li>
+                <li><a href="#">Contact</a>
+                    <ul>
+                        <li><a href="police_contact.html">Police Contact</a></li>
+                        <li><a href="fireman_contact.html">Fireman Contact</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Account</a>
+                    <ul>
+                        <li><a href="profile.html">Profile</a></li>
+                        <li><a href="inside_reset_password.html">Forget Password</a></li>
+                        <li><a href="#" onclick="doLogout()">Sign Out</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="myMessage">
+        <form>
+            <p id="errmsg"></p>
+            <br><br>
+            <div class="input-group">
+                <input type="text" id="sname" name="sname" required>
+                <label for="sname"><ion-icon name="person-outline"></ion-icon> Sender Name</label>
+            </div>
+            <div class="input-group">
+                <input type="text" id="rname" name="rname" required>
+                <label for="rname"><ion-icon name="person-outline"></ion-icon> Receiver Name</label>
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" name="email" required>
+                <label for="email"><ion-icon name="mail-outline"></ion-icon> Email</label>
+            </div>
+            <div class="input-group">
+                <input type="text" id="contact" name="contact" required>
+                <label for="contact"><ion-icon name="call-outline"></ion-icon> Phone No.</label>
+            </div>
+            <div class="input-group">
+               <textarea name="message" id="message" rows="8" required></textarea>
+                <label for="message"><ion-icon name="mail-open-outline"></ion-icon>
+                    Your Message</label>
+            </div>
+            <button type="submit" id="btn-send-hospital"><ion-icon name="send-outline"></ion-icon> Submit</button>
+        </form>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/sendMessage.js"></script>
+</html>

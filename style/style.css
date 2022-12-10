@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com.css2?family=Inter:wght@300;400,500,600,700,800,900display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body
+{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg,#04fafd 5%, #199dff 50% ,#030423);
+}
+
+.container
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    background-color:linear-gradient(180deg,#04fafd 5%, #199dff 50% ,#030423);
+}
+.container::before
+{
+    content: "";
+    position: absolute;
+    height: 315px;
+    width: 550px;
+    background-image: conic-gradient(transparent,transparent,transparent,#fff);
+}
+.container.active:before
+{
+    animation: rotate 4s linear infinite;
+}
+@keyframes rotate
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+.container .login .sign-up .forget-password .update-form
+{
+    position: absolute;
+    height:  315px;
+    width: 340px;
+    background-color: linear-gradient(180deg,#04fafd 5%, #199dff 50% ,#030423);
+}
+.sign-up, 
+.login, 
+.forget-password,
+.update-form
+{
+    position: relative;
+    padding: 10px;
+    width: 420px;
+}
+
+.sign-up-container p, 
+.login-container p, 
+.forget-password-container p,
+.update-form-container p
+{
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.sign-up-container a, 
+.login-container a, 
+.forget-password-container a,
+.update-form-container a
+{
+    color: skyblue;
+    text-decoration: none;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.sign-up-container, 
+.login-container, 
+.forget-password-container,
+.update-form-container
+{
+    position: relative;
+    background: linear-gradient(180deg,#04fafd 5%, #199dff 50% ,#030423);
+    padding: 24px 20px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 2px rgb(152,152,152,0.2);
+}
+
+.sign-up-container h3, 
+.login-container h3, 
+.forget-password-container h3,
+.update-form-container h3
+{
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    font-weight: 800;
+    word-spacing: 2px;
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.cs-form-group
+{
+    display: block;
+    padding: 4px 0;
+    line-height: 1 5rem;
+}
+
+.cs-form-group label
+{
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.cs-form-group 
+.cs-form-control
+{
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    padding: 8px 6px;
+    border: 1px solid #04fafd;
+    border-radius: 4px;
+    box-shadow: inset 0px 1px 2px rgb(152,152,152,0.2);
+}
+
+.cs-form-group 
+.cs-form-control:focus
+{
+    outline: 0;
+    border: 1px solid rgb(40, 201, 255);
+}
+
+.cs-form-control 
+.cs-forget-password
+{
+    font-size: 14px;
+    margin-top: -24px;
+}
+.cs-form-group 
+.cs-form-submit
+{
+    width: 100%;
+    background: lightblue;
+    color: #fff;
+    border: 1px solid rgb(40, 201, 255);
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 12px 8px;
+    border-radius: 4px;
+    box-shadow: inset 0px 1px 2px rgb(152,152,152,0.2);
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.cs-form-group 
+.cs-form-submit:hover
+{
+    background: linear-gradient(180deg,#04fafd 5%, #199dff 50% ,#030423);
+    border-color: lightgreen;
+    box-shadow: 0px 1px 4px rgb(152,152,152,0.2);
+}

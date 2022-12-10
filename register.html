@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/bubbles.css" />
+    <title>Register</title>
+  </head>
+  <body>
+    <!--Bubbles Effect-->
+    <div class="wrapper">
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+      <div><span class="dot"></span></div>
+    </div>
+
+    <div class="container active">
+      <!--Create Account-->
+      <div class="sign-up">
+        <div class="sign-up-container">
+          <h3>Create Account</h3>
+          <p id="errmsg"></p>
+          <div class="cs-form-group">
+            <input type="text" name="user" id="user" class="cs-form-control" placeholder="Username"/>
+          </div>
+          <div class="cs-form-group">
+            <input type="password" name="pass" id="pass" class="cs-form-control" placeholder="Password"/>
+          </div>
+          <div class="cs-form-group">
+            <input type="text" name="fname" id="fname" class="cs-form-control" placeholder="First Name"/>
+          </div>
+          <div class="cs-form-group">
+            <input type="text" name="lname" id="lname" class="cs-form-control" placeholder="Last Name"/>
+          </div>
+          <div class="cs-form-group">
+            <input type="text" name="mname" id="mname" class="cs-form-control" placeholder="Middle Name"/>
+          </div>
+          <div class="cs-form-group">
+            <input type="text" name="address" id="address" class="cs-form-control" placeholder="Address"/>
+          </div>
+          <div class="cs-form-group">
+            <input type="text" name="contact_number" id="contact_number" class="cs-form-control" placeholder="Contact No."/>
+          </div>
+          <div class="cs-form-group">
+            <input type="email" name="email" id="email" class="cs-form-control" placeholder="Email"/>
+          </div>
+          <div class="cs-form-group">
+            <select name="gender" id="gender" class="cs-form-control">
+              <option selected disabled value="">Gender</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+          <div class="cs-form-group">
+            <button id="btn-reg" class="cs-form-submit">Create Account</button>
+          </div>
+          <p>Already have an account? <a href="login.html">Login</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/jquery.js"></script>
+  <script src="js/form.js"></script>
+</html>
